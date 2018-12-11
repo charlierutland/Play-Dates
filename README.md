@@ -2,7 +2,7 @@
 # Play Dates
 
 
-<p align="center">
+<p>
 Play Dates makes it easy to find activities that are going on for kids near you.  You can filter by times, locations, price or age to find the best event for your kids. Alternatively, if you are hosting an event, you can create your own play date.
 </p>
 
@@ -17,30 +17,74 @@ Play Dates makes it easy to find activities that are going on for kids near you.
  
  
 
+## Getting Started
+A few things you have to take in consideration before using Play - Dates
+
+After cloning the repo you'll have to :
 
 
-## Installation
+## Install global and local dependancies:
+Node: ```brew install node```
+Npm: ```npm install```
+Homebrew
 
-1. Clone this repo and enter!
 
-   ```bash
-   git clone https://github.com/charlierutland/playdates.git
-   cd playdates
-   ```
 
-2. Install dependencies.
 
-   ```bash
-   npm install
-  
-   ```
+## Migrate and connect Postgres database
+Install PostgreSQL on your machine:
+```brew install postgres```
 
-3. While in the client folder ````cd client````, run ````npm start```` to start the React development environment that will build the JS bundle for your app.
+Access PostgresSQL command line on the default database "postgres":
 
-4. Connect to the backend in the server folder ````cd server````, run ````node index.js```` to start the express server
- 
+```psql postgres```
 
-5. Run a local instance of sequelize on your machine
+Your bash should now look like this:
+```psql (10.5)
+Type "help" for help.
+
+postgres=#
+```
+
+Now create a new database for the current user and connect it:
+
+```postgres=# CREATE DATABASE play-date-dev;
+postgres=# \c play-date-dev;
+```
+
+The result will be:
+```You are now connected to database "play-date-dev" as user <user-name>.
+play-date-dev=#
+```
+
+Now set a password for the current user:
+
+```play-date-dev=# ALTER USER <user_name> WITH PASSWORD 'new_password';```
+
+Always remember the semicolon or the syntax will not work.
+
+Now your database setup is finished and you are ready to connect it with the server.
+
+You can change the port or database name on postgres configuration database.
+
+If you would like to use other SQL database you should just configure it in server/ config/config.json.
+
+Finally, migrate the database on your local machine:
+```cd server
+npm run recreateDb
+```
+
+# Usage
+Start the server:
+```cd server
+node index.js
+```
+
+Start the React development environment that will build the JS bundle for your app.
+```
+cd client
+npm start
+```
 
 
 ## Tech Stack
