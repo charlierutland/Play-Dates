@@ -3,7 +3,7 @@
 
 
 <p>
-Play Dates makes it easy to find activities that are going on for kids near you.  You can filter by times, locations, price or age to find the best event for your kids. Alternatively, if you are hosting an event, you can create your own play date.
+Play Dates makes it easy to find activities that are going on for kids near you.  You can filter by time, locations, price or age to find the best event for your kids. Alternatively, if you are hosting an event, you can create your own play date.
 </p>
 
 ## Table of contents
