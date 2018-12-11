@@ -24,9 +24,11 @@ After cloning the repo you'll have to :
 
 
 ## Install global and local dependancies:
-Node: ```brew install node```
-Npm: ```npm install```
-Homebrew
+<ul>
+  <li>Node: brew install node</li>
+  <li>Npm: npm install</li>
+<li>Homebrew</li>
+  </ul>
 
 
 
