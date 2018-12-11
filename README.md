@@ -6,6 +6,15 @@
 Play Dates makes it easy to find activities that are going on for kids near you.  You can filter by times, locations, price or age to find the best event for your kids. Alternatively, if you are hosting an event, you can create your own play date.
 </p>
 
+## Table of contents
+- [Screenshots](#screenshots)
+- [Getting started](#getting-started)
+- [Install global and local dependancies](#install-global-and-local-dependancies)
+- [Migrate and connect Postgres database](#migrate-and-connect-postgres-database)
+- [Usage](#usage)
+- [Tech Stack](#tech-stack)
+
+
 ## Screenshots
 
 <p align="center">
@@ -23,14 +32,11 @@ A few things you have to take in consideration before using Play - Dates
 After cloning the repo you'll have to :
 
 
-## Install global and local dependancies:
-<ul>
-  <li>Node: brew install node</li>
-  <li>Npm: npm install</li>
-<li>Homebrew</li>
-  </ul>
+## Install global and local dependancies
 
-
+- Node: ```brew install node```
+- Npm: ```npm install```
+- Homebrew
 
 
 ## Migrate and connect Postgres database
